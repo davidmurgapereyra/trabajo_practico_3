@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Cliente</title>
+    <link rel="stylesheet" href="../static/css/estilos.css">
+</head>
+<body id="body">
+	<header id="encabezado">
+        <h1>Registro de Cliente</h1>
+    </header>
+
+    <main class="contenido-principal">
+        <form id="mainForm">
+            <section class="seccion">
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
+            </section>
+
+            <section class="seccion">
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" name="nombres" required>
+            </section>
+
+            <section class="seccion">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </section>
+
+            <section class="seccion">
+                <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            </section>
+
+            <section class="seccion">
+                <label>Género:</label>
+                <input type="radio" id="femenino" name="genero" value="femenino">
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="x" name="genero" value="x">
+                <label for="x">X</label>
+            </section>
+
+            <section class="seccion">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </section>
+
+            <section class="seccion">
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" id="domicilio" name="domicilio" required>
+            </section>
+
+            <section class="seccion">
+                <label for="provincia">Provincia:</label>
+                <select id="provincia" name="provincia" required>
+                    <option value="">Seleccione una provincia</option>
+                    <option value="provincia1">Provincia 1</option>
+                    <option value="provincia2">Provincia 2</option>
+                    <option value="provincia3">Provincia 3</option>
+                </select>
+            </section>
+
+            <section class="seccion">
+                <label for="telefono">Número de Teléfono Celular:</label>
+                <input type="text" id="telefono" name="telefono">
+            </section>
+
+            <section class="seccion">
+                <label>Categorías de Interés:</label>
+                <input type="checkbox" id="categoria1" name="categorias" value="categoria1">
+                <label for="categoria1">Categoría 1</label>
+                <input type="checkbox" id="categoria2" name="categorias" value="categoria2">
+                <label for="categoria2">Categoría 2</label>
+                <input type="checkbox" id="categoria3" name="categorias" value="categoria3">
+                <label for="categoria3">Categoría 3</label>
+            </section>
+
+            <section class="seccion">
+                <label for="sugerencias">Sugerencias para la empresa:</label>
+                <textarea id="sugerencias" name="sugerencias" rows="4" cols="50"></textarea>
+            </section>
+
+            <section class="seccion">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </section>
+
+            <section class="seccion">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Acepto los términos y condiciones</label>
+            </section>
+
+            <section class="seccion">
+                <input type="checkbox" id="informacion" name="informacion">
+                <label for="informacion">Acepto recibir información relativa a la empresa :p</label>
+            </section>
+
+            <section class="seccion">
+                <input type="submit" value="Registrar">
+            </section>
+        </form>
+    </main>
+
+    <footer id="pie-de-pagina">
+        <a href="https://www.twitch.tv/bananirou" class="enlace-social">Twitch</a>
+        <a href="https://www.instagram.com/david.mpereyra/" class="enlace-social">Instagram</a>
+    </footer>
+</body>
+</html>
